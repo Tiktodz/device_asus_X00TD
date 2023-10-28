@@ -1,0 +1,8 @@
+[
+    {
+        "repository": "Tiktodz/device_asus_X00TD",
+        "target_path": "device/asus/X00TD",
+        "branch": "inex",
+        "remote": "github"
+    }
+  ]
