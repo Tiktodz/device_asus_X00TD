@@ -33,7 +33,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="cheetah-user 14 UQ1A.231205.015 11084887 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 14 UQ1A.240105.002 11129216 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/cheetah/cheetah:14/UQ1A.231205.015/11084887:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:14/UQ1A.240105.002/11129216:user/release-keys"
