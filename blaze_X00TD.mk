@@ -17,6 +17,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 BLAZE_BUILD_TYPE := OFFICIAL
 BLAZE_MAINTAINER := fakedotkit
 WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
