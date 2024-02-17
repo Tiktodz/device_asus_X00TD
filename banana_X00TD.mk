@@ -9,26 +9,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Blaze stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Blaze official flags
 TARGET_BOOT_ANIMATION_RES := 1080
 #TARGET_FACE_UNLOCK_SUPPORTED := true
-#BLAZE_BUILD_TYPE := OFFICIAL
-#BLAZE_MAINTAINER := fakedotkit
+BANANA_BUILD_TYPE := UNOFFICIAL
+BANANA_MAINTAINER := fakedotkit
 #WITH_GAPPS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X00TD
+PRODUCT_NAME := banana_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.banana.maintainer=fakedotkit
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
