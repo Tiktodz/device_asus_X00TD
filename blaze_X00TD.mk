@@ -16,7 +16,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 BLAZE_BUILD_TYPE := OFFICIAL
 BLAZE_MAINTAINER := fakedotkit
-#WITH_GAPPS := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -33,7 +34,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="cheetah-user 14 UQ1A.240205.002 11224170 release-keys"
+    PRIVATE_BUILD_DESC="shiba-user 14 UQ1A.240205.004 11269751 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/cheetah/cheetah:14/UQ1A.240205.002/11224170:user/release-keys"
+BUILD_FINGERPRINT := "google/shiba/shiba:14/UQ1A.240205.004/11269751:user/release-keys"
