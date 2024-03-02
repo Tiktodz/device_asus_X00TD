@@ -13,7 +13,7 @@ $(call inherit-product, vendor/banana/config/common.mk)
 
 # Blaze official flags
 TARGET_BOOT_ANIMATION_RES := 1080
-#TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 BANANA_BUILD_TYPE := UNOFFICIAL
 BANANA_MAINTAINER := fakedotkit
 #WITH_GAPPS := true
@@ -29,9 +29,6 @@ PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.banana.maintainer=fakedotkit
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
